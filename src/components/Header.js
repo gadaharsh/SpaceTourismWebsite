@@ -1,13 +1,18 @@
 import React from "react";
-import { FiMenu } from "react-icons/fi"
+import { FiMenu } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 
 import logo from "../assets/shared/logo.svg";
 export default function Header() {
   const handleClick = () => {
     const navbar = document.getElementById("navbar");
+    const listItems = document.querySelectorAll(".list-item");
 
     navbar.classList.toggle("open");
+    
+    listItems.forEach((item) => {
+      item.addEventListener("click", () => navbar.classList.remove("open"));
+    });
   };
 
   return (
@@ -21,7 +26,7 @@ export default function Header() {
       {/* {isOpen && ( */}
       <nav id="navbar">
         <ul className="flex items-center">
-          <li className="mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
             <NavLink
               to="/"
               exact
@@ -30,7 +35,7 @@ export default function Header() {
               <span>00</span> Home
             </NavLink>
           </li>
-          <li className="mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
             <NavLink
               to="/destination"
               exact
@@ -39,7 +44,7 @@ export default function Header() {
               <span>01</span> Destination
             </NavLink>
           </li>
-          <li className="mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
             <NavLink
               to="/crew"
               exact
@@ -48,7 +53,7 @@ export default function Header() {
               <span>02</span> Crew
             </NavLink>
           </li>
-          <li className="mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
             <NavLink
               to="/technology"
               exact
