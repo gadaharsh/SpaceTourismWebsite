@@ -26,7 +26,7 @@ export default function Header() {
       {/* {isOpen && ( */}
       <nav id="navbar">
         <ul className="flex items-center">
-          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold  hover:text-white">
             <NavLink
               to="/"
               exact
@@ -35,7 +35,7 @@ export default function Header() {
               <span>00</span> Home
             </NavLink>
           </li>
-          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold  hover:text-white">
             <NavLink
               to="/destination"
               exact
@@ -44,7 +44,7 @@ export default function Header() {
               <span>01</span> Destination
             </NavLink>
           </li>
-          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold  hover:text-white">
             <NavLink
               to="/crew"
               exact
@@ -53,7 +53,7 @@ export default function Header() {
               <span>02</span> Crew
             </NavLink>
           </li>
-          <li className="list-item mx-2 py-5 text-gray-400 font-semibold">
+          <li className="list-item mx-2 py-5 text-gray-400 font-semibold  hover:text-white">
             <NavLink
               to="/technology"
               exact

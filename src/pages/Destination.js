@@ -26,7 +26,7 @@ export default function Destination() {
             src={images[value]}
             alt={name}
             title={name}
-            className="block mx-auto"
+            className="block mx"
           />
         </article>
 

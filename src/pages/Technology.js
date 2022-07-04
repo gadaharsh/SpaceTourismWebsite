@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BsCircleFill } from "react-icons/bs";
 import all from "../data.json";
 
 export default function Technology() {
@@ -16,16 +15,16 @@ export default function Technology() {
   return (
     <section className="home technology">
       <div className="px-5 pt-32 grid grid-cols-1 gap-5 lg:grid-cols-2 gap-10 xl:max-w-7xl xl:mx-auto">
-        <article className="pt-5 md:pt-10 xl:pt-32 text-center md:text-left">
+        <article className="pt-5 md:pt-10 xl:pt-16 text-center md:text-left">
           <h2 className="text-white text-3xl font-extralight text-gray-300 uppercase tracking-wider pb-5 md:pb-10">
             03
             <span className="ml-5 font-bold">Space Launch 101</span>
           </h2>
 
           <div className="md:flex items-center justify-center">
-            <article className="md:mr-10 pt-5 md:pt-20">
+            <article className="md:mr-5 pt-5 md:pt-10">
               <ul
-                className="flex items-center justify-center md:flex-col mb-10"
+                className="flex items-center justify-center md:flex-col mb-5"
                 start="1"
               >
                 {technology.map((item, index) => (
